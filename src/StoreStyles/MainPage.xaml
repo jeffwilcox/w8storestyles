@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="StoreStyles.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StoreStyles"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <TextBlock Style="{StaticResource BasicTextStyle}" Text="BasicTextStyle"/>
+            <TextBlock Style="{StaticResource BaselineTextStyle}" Text="BaselineTextStyle"/>
+            <TextBlock Style="{StaticResource HeaderTextStyle}" Text="HeaderTextStyle"/>
+            <TextBlock Style="{StaticResource SubheaderTextStyle}" Text="SubheaderTextStyle"/>
+            <TextBlock Style="{StaticResource TitleTextStyle}" Text="TitleTextStyle"/>
+            <TextBlock Style="{StaticResource SubtitleTextStyle}" Text="SubtitleTextStyle"/>
+            <TextBlock Style="{StaticResource ItemTextStyle}" Text="ItemTextStyle (Baseline clone)"/>
+            <TextBlock Style="{StaticResource BodyTextStyle}" Text="BodyTextStyle"/>
+            <TextBlock Style="{StaticResource CaptionTextStyle}" Text="CaptionTextStyle"/>
+            <TextBlock Style="{StaticResource GroupHeaderTextStyle}" Text="GroupHeaderTextStyle"/>
+            <!--
+            <Button Style="{StaticResource TextButtonStyle}" Content="TextButtonStyle"/>
+            -->
+            <Button Style="{StaticResource TextPrimaryButtonStyle}" Content="TextPrimaryButtonStyle"/>
+            <Button Style="{StaticResource TextSecondaryButtonStyle}" Content="TextSecondaryButtonStyle"/>
+            <RadioButton Style="{StaticResource TextRadioButtonStyle}" Content="TextRadioButtonStyle"/>
+            <Button Style="{StaticResource AppBarButtonStyle}" AutomationProperties.Name="AppBarButtonStyle"/>
+            <TextBlock Style="{StaticResource PageHeaderTextStyle}" Text="PageHeaderTextStyle"/>
+            <TextBlock Style="{StaticResource PageSubheaderTextStyle}" Text="PageSubheaderTextStyle"/>
+            <TextBlock Style="{StaticResource SnappedPageHeaderTextStyle}" Text="SnappedPageHeaderTextStyle"/>
+            <StackPanel Orientation="Horizontal">
+            <Button Style="{StaticResource BackButtonStyle}" />
+                <StackPanel>
+                    <TextBlock Style="{StaticResource CaptionTextStyle}" Text="BackButtonStyle"/>
+                    <TextBlock Style="{StaticResource CaptionTextStyle}" Text="PortraitBackButtonStyle"/>
+                    <TextBlock Style="{StaticResource CaptionTextStyle}" Text="SnappedBackButtonStyle"/>
+                </StackPanel>
+            </StackPanel>
+            <TextBlock Style="{StaticResource PageSubheaderTextStyle}" Text="Item template styles"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Style="{StaticResource CaptionTextStyle}" Text="Standard250x250ItemTemplate"/>
+                <TextBlock Style="{StaticResource CaptionTextStyle}" Text="Standard500x130ItemTemplate"/>
+                <TextBlock Style="{StaticResource CaptionTextStyle}" Text="Standard130ItemTemplate"/>
+                <TextBlock Style="{StaticResource CaptionTextStyle}" Text="Standard80ItemTemplate"/>
+                <TextBlock Style="{StaticResource CaptionTextStyle}" Text="StandardSmallIcon300x70ItemTemplate"/>
+                <TextBlock Style="{StaticResource CaptionTextStyle}" Text="StandardSmallIcon70ItemTemplate"/>
+                <TextBlock Style="{StaticResource CaptionTextStyle}" Text="StandardFileWithTooltip190x130ItemTemplate"/>
+            </StackPanel>
+            <TextBlock Style="{StaticResource PageSubheaderTextStyle}" Text="Scroll viewers"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Style="{StaticResource CaptionTextStyle}" Text="HorizontalScrollViewerStyle"/>
+                <TextBlock Style="{StaticResource CaptionTextStyle}" Text="VerticalScrollViewerStyle"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
